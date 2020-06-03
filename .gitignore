@@ -1,2 +1,4 @@
 .python-version
 constant.py
+.idea/
+__pycache__/

@@ -1,5 +1,3 @@
-from constant import OUT_URL
-
 testcase_list = {
     'ExampleTD_SQ1_1':
         {

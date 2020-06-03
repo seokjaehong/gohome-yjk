@@ -1,12 +1,12 @@
 from constant import OUT_URL
 from logic import testcase_list
-from utils import reset_page
+from utils import get_start_page
 import time
 
 sec=0.4
 
 def c1_2(driver):
-    reset_page(driver)
+    get_start_page(driver)
     time.sleep(sec)
     c1_2 = testcase_list['ExampleTD_SQ1_2']
 
