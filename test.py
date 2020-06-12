@@ -12,14 +12,11 @@ if __name__ == '__main__':
     options = webdriver.ChromeOptions()
     options.add_argument("--start-maximized")
     driver = webdriver.Chrome(options=options)
-    get_start_page(driver)
-
     logics = get_logic()
-    for logic in logics:
-        # print(logic)
-        execute_test(driver, logic)
 
-        # c1_1(driver)
-    # c1_2(driver)
+    for logic in logics:
+        #1. 시작페이지로 이동
+        get_start_page(driver)
+        execute_test(driver, logic)
 
     driver.quit()
