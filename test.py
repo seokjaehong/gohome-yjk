@@ -15,8 +15,9 @@ if __name__ == '__main__':
     logics = get_logic()
 
     for logic in logics:
-        #1. 시작페이지로 이동
+        # 1. 시작페이지로 이동
         get_start_page(driver)
-        execute_test(driver, logic)
+        result = execute_test(driver, logic)
+        print(result)
 
     driver.quit()
